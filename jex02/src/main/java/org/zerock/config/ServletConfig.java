@@ -9,9 +9,9 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @EnableWebMvc
-@ComponentScan(basePackages = {"org.zerock.controller","org.zerock.exception"})
-public class ServletConfig implements WebMvcConfigurer{
-	
+@ComponentScan(basePackages = { "org.zerock.controller" })
+public class ServletConfig implements WebMvcConfigurer {
+
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
 		InternalResourceViewResolver bean = new InternalResourceViewResolver();
